@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado del Comando SSH</title>
+    <!-- Incluir Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Incluir CSS personalizado -->
+    <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <h1 class="text-center">Portal de gestión de red</h1>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center">Resultado del Comando SSH</h2>
+                <div class="mt-4">
+                    <h3>Máquina: <span class="badge badge-info">{{ maquina }}</span></h3>
+                    <h4>Comando Ejecutado: <code>{{ comando }}</code></h4>
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Resultado:</h5>
+                            <pre>{{ resultado }}</pre>
+                            <h5 class="card-title">Error:</h5>
+                            <pre>{{ error }}</pre>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <a href="/" class="btn btn-primary btn-block">Volver</a>
+            </div>
+        </div>
+    </div>
+    <!-- Incluir Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* Estilos personalizados */
+body {
+    background-color: #e6f7ff;
+    color: #333;
+}
+
+.banner {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card pre {
+    white-space: pre-wrap;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #0056b3;
+    border-color: #0042a3;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #6c757d;
+    border-color: #545b62;
+}
